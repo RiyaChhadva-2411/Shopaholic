@@ -25,85 +25,46 @@ body {
   background-clip: padding-box;
   border-radius: 5px;
 }
-/*NAVBAR CSS*/
-.Navbar_shopaholic_logo{
-    width:180px;
-    height: 100px;
-}
+
 nav {
   background-color: #232f3e;
-  padding:20px;
+  padding: 1rem 1rem;
 }
-.navbar{
-    padding-top:0;
-    padding-bottom: 0;
-}
-#Navbar_search_btn {
+
+#search_btn {
   background-color: #febd69;
-  height: 45px;
-  width: 50px;
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-top-right-radius: 12px;
-  border-bottom-right-radius: 12px;
 }
-#Navbar_search_field {
-    height:45px;
-    padding: 1rem;
-    font-family: 'Roboto', sans-serif;
-    border-radius:12px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-    font-weight: bold;
-}
-#Navbar_login_btn{
-    border-radius:12px;
-    background-color:#febd69;
-    text-align: center;
-    width: 100px;
-    height: 45px;
-    font-family: 'Roboto' , sans-serif;
-    font-weight:bold;
-}
-.Navbar_cart_icon{
-    width: 35px;
-    height:35px;
-}
-.Navbar_cart_count{
-    color: #ffffff;
-    position: absolute;
-    top:18px;
-    margin-left: 15px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-}
-/* Footer */
-.Footer_component{
-    margin-top: 80px;
-    background-color:#232f3e ;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    height: 100px;
-  }
-  .Footer_text{
-    color: #ffffff;
-    font-family: 'Roboto' , sans-serif;
-    font-weight: 300;
-    margin-top: 60px
-  }
-/* .input-group {
+
+.input-group {
   width: 90%;
   margin-right: 35%;
-} */
+}
 
-/* #login_btn,
+#search_field {
+  height: 2.4rem;
+  padding: 1rem;
+}
+
+#login_btn,
 #view_btn {
   background-color: #febd69;
   padding: 0.4rem 1.8rem;
   font-family: calibri;
-} */
+}
 
+#cart {
+  font-size: 1rem;
+  color: white;
+}
+
+#cart_count {
+  background-color: #febd69;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.2rem;
+  color: black;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
 
 /* Home page */
 #products_heading {
@@ -151,6 +112,15 @@ nav {
   color: grey;
   margin-left: 0.5rem;
 }
+
+/* Footer */
+footer {
+  margin-top: 8rem;
+  color: grey;
+  bottom: 0;
+  width: 100%;
+}
+
 /* Ratings */
 
 .rating-outer {
