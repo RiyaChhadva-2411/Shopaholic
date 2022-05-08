@@ -11,7 +11,7 @@
     "seeder": "node backend/utils/seeder.js",
     "heroku-postbuild": "NPM_CONGIF_PRODUCTION=false && npm install --prefix frontend && npm run build --prefix frontend"
   },
-  "author": "Hem Parekh",
+  "author": "Riya Shah",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.27.2",
@@ -39,6 +39,6 @@
     "validator": "^13.7.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.16"
   }
 }
