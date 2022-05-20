@@ -1,24 +1,25 @@
 const express = require("express");
-const errorMiddleWare = require("./middlewares/errors");
 const app = express();
-const fileupload = require("express-fileupload");
-const dotenv = require("dotenv");
-const path = require("path");
 
 const cookieParser = require("cookie-parser");
-const bodyparser = require("body-parser");
-const cloudinary = require("cloudinary");
+const bodyParser = require("body-parser");
+const fileUpload = require("express-fileupload");
+// const dotenv = require('dotenv');
+const path = require("path");
 
-//Setting up config file
-if (process.env.NODE_ENV !== 'PRODUCTION') require('dotenv').config({ path: 'backend/config/config.env'})
+const errorMiddleware = require("./middlewares/errors");
 
+// Setting up config file
+if (process.env.NODE_ENV !== "PRODUCTION")
+  require("dotenv").config({ path: "backend/config/config.env" });
+// dotenv.config({ path: 'backend/config/config.env' })
 
 app.use(express.json());
-app.use(bodyparser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
-app.use(fileupload());
+app.use(fileUpload());
 
-//Import all routes
+// Import all routes
 const products = require("./routes/product");
 const auth = require("./routes/auth");
 const payment = require("./routes/payment");
@@ -37,7 +38,7 @@ if (process.env.NODE_ENV === "PRODUCTION") {
   });
 }
 
-// MiddleWare to handle errors
-app.use(errorMiddleWare);
+// Middleware to handle errors
+app.use(errorMiddleware);
 
 module.exports = app;
